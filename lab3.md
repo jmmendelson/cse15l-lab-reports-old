@@ -47,7 +47,7 @@ What If?
 
 Let's say we want to find all lines that don't have "e". Just like the previous example, you can use -v to find all lines in the file that do not contain "e".
 
-Also, I took out the blank lines because it took up a lot of lines.
+Also, I took out the blank lines for both examples because they took up a lot of lines.
 
 ---
 
@@ -116,8 +116,8 @@ Research on alcohol problems is as important as research on sepsis
 Longabaugh remarked that NIH is increasingly trying to
 ```
 
-Let's say I want to find all the lines that specifically have "is" but not within another word like "his" or "this". 
-You can use -w to only find lines with that exact pattern.
+Let's say we want to find all the lines that specifically have "is" but not within another word like "his" or "this". 
+You can use -w to only find lines with the specific word "is".
 
 **-w Example 2**
 
@@ -135,7 +135,7 @@ maxmendelson@Maxs-MacBook-Pro docsearch % grep -w "20" technical/plos/journal.pb
         versus 6% in the top 20 ecological journals, whereas the United States and Canada had 81%
 ```
         
-Let's say I want to find all lines that have "20" but not "2000". Like before, you can use -w to only find lines with that exact pattern.
+Let's say I want to find all lines that have "20" but not "2000". Like before, you can use -w to only find lines with the exact number "20".
 
 ---
 
@@ -163,7 +163,7 @@ during the March ABA/NLADA Equal Justice Conference. Approximately
 Program Performance held a special telephonic conference for 2002
 ```
 
-Let's say I want to find all lines that contain the word "conference" even if its uppercase. You can use -i to ignore casess differences.
+Let's say I want to find all lines that contain the word "conference" even if its uppercase. You can use -i to ignore case differences so you can find lines that start with "Conference".
 
 **-i Example 2**
 
@@ -269,7 +269,7 @@ maxmendelson@Maxs-MBP docsearch % grep -i "if" technical/911report/chapter-6.txt
                 not been found. If the CIA was reluctant to use the Predator, Black did not mention
 ```
           
-Let's say I want to find all lines that contain the word "if" even if its uppercase. Like before, you can use -i to ignore casess differences.
+Let's say I want to find all lines that contain the word "if" even if its uppercase. Like before, you can use -i to ignore case differences so it includes lines that start with "If".
 
 ---
 
